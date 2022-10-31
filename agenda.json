@@ -1,0 +1,138 @@
+{
+    "profiles": 
+    [
+        {
+            "id": 1,
+            "name": "Welersson Drumont Andrade",
+            "title": "Mestre Cuca",
+            "status": "Trabalhando",
+            "profilePic": "images/download.png"
+        }
+    ],
+    "chores": 
+    [
+        {
+            "userID": 1,
+            "id": 1,
+            "name": "Academia",
+            "hour": "09:00",
+            "place": "BodyFit: Coracao Eucaristico",
+            "todo": 
+            [
+                
+                    {
+                        "id": 1,
+                        "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum viverra mauris quis volutpat",
+                        "isDone": false
+                    },
+                
+
+                {
+                    "todo2": {
+                        "id": 2,
+                        "info": "Praesent fermentum, nisl consequat fringilla aliquam",
+                        "isDone": false
+                    }
+                },
+                
+                {
+                    "todo3": {
+                        "id": 3,
+                        "info": "libero urna placerat orci, ac porta arcu nisl ut ante. Interdum et malesuada fames ac ante ipsum",
+                        "isDone": false
+                    }
+                }
+            
+            ],
+            "isDone": false
+        },
+        {
+            "userID": 1,
+            "id": 2,
+            "name": "Trabalho$",
+            "hour": "10:00",
+            "place": "Empresa",
+            "todo": {
+                "todo1": {
+                    "id": 1,
+                    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum viverra mauris quis volutpat",
+                    "isDone": false
+                },
+                "todo2": {
+                    "id": 2,
+                    "info": "Praesent fermentum, nisl consequat fringilla aliquam",
+                    "isDone": false
+                },
+                "todo3": {
+                    "id": 3,
+                    "info": "libero urna placerat orci, ac porta arcu nisl ut ante. Interdum et malesuada fames ac ante ipsum",
+                    "isDone": false
+                }
+            },
+            "isDone": false
+        },
+        {
+            "userID": 1,
+            "id": 1,
+            "name": "Cozinhar e Netflix$",
+            "hour": "09:00",
+            "place": "BodyFit: Coracao Eucaristico",
+            "todo": {
+                "todo1": {
+                    "id": 1,
+                    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum viverra mauris quis volutpat",
+                    "isDone": false
+                },
+                "todo2": {
+                    "id": 2,
+                    "info": "Praesent fermentum, nisl consequat fringilla aliquam",
+                    "isDone": false
+                },
+                "todo3": {
+                    "id": 3,
+                    "info": "libero urna placerat orci, ac porta arcu nisl ut ante. Interdum et malesuada fames ac ante ipsum",
+                    "isDone": false
+                }
+            },
+            "isDone": false
+        }
+    ],
+    "tasks": [
+        {
+            "userID": 1,
+            "id": 1,
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "isDone": false
+        },
+        {
+            "userID": 1,
+            "id": 2,
+            "info": "Nam euismod, ante nec pellentesque varius, massa ante mattis nunc",
+            "isDone": false
+        },
+        {
+            "userID": 1,
+            "id": 3,
+            "info": "quis venenatis massa velit eu nunc.",
+            "isDone": false
+        },
+        {
+            "userID": 1,
+            "id": 4,
+            "info": "Nam luctus neque vitae dui pulvinar volutpat. Interdum et malesuada fames ac.",
+            "isDone": false
+        },
+        {
+            "userID": 1,
+            "id": 5,
+            "info": "ante Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod, ante nec pellentesque varius, massa ante mattis nunc, primis.",
+            "isDone": false
+        },
+        {
+            "userID": 1,
+            "id": 6,
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "isDone": false
+        }
+    ]
+}
