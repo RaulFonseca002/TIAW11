@@ -14,17 +14,43 @@ document.body.onload = () => {
     const status = agenda.profiles[idx].status
     document.getElementById('status').textContent = status;
 
-    const hour = agenda.chores[idx].hour
-    document.getElementById('hour').textContent = hour;
+    var hourLocate;
+    var choreNameLocate;
+    var localLocate;
+    var TODOlocate;
+    var taskLocate;
 
-    const choreName = agenda.chores[idx].name
-    document.getElementById('choreName').textContent = choreName;
+    for(var c = 0; c<3; c++)
+    {
+        hourLocate = "hour" + c;
+        const hour = agenda.chores[c].hour
+        document.getElementById(hourLocate).textContent = hour;
+    
+        choreNameLocate = "choreName" + c;
+        const choreName = agenda.chores[c].name
+        document.getElementById(choreNameLocate).textContent = choreName;
+    
+        localLocate = "local" + c;
+        const place = agenda.chores[c].place
+        document.getElementById(localLocate).textContent = place;
+    
+    
+        for(var i = 0; i<3; i++)
+        {
+            TODOlocate = "TODO" + i + c;
+            const TODO = agenda.chores[c].todo[i].info
+            document.getElementById(TODOlocate).textContent = TODO;
+        }
 
-    const place = agenda.chores[idx].place
-    document.getElementById('local').textContent = place;
+    }
 
-    const TODO1 = agenda.chores[0].todo[0].todo1.info
-    document.getElementById('TODO1').textContent = TODO1;
+    for (var c = 0; c<6; c++)
+    {
+        taskLocate = "task" + c;
+        const task = agenda.tasks[c].info
+        document.getElementById(taskLocate).textContent = task;
+
+    }
     
 }
 
