@@ -17,11 +17,12 @@
             
             <div class="col-1 backButton">
 
-                <form class="col-1  " action="[Main Page]">
-
-                    <button type="button" class="btn btn-outline-primary">
-                        Voltar
-                    </button>
+                <form class="col-1" href="https://google.com">
+                    <a href="add.html">
+                        <button type="button" class="btn btn-outline-primary ">
+                            + ADD
+                        </button>
+                   </a>
                     
                 </form>
 
@@ -110,31 +111,11 @@
                         <div class=" name ">
                             <h4 id="choreName0"></h4>
                         </div>
+
                         <div class="info ">
-                            <dd class="lista">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-text">
-                                      <input class="form-check-input mt-0" type="checkbox" value=""   >
-                                    </div>
-                                    <div class="border border-primary choresInfo" id="TODO00"></div>
-                                </div>
-
-                                <div class="input-group mb-3">
-                                    <div class="input-group-text">
-                                      <input class="form-check-input mt-0" type="checkbox" value=""   >
-                                    </div>
-                                    <div class="border border-primary choresInfo" id="TODO10"></div>
-                                </div>
-
-                                <div class="input-group mb-3">
-                                    <div class="input-group-text">
-                                      <input class="form-check-input mt-0" type="checkbox">
-                                    </div>
-                                    <div class="border border-primary choresInfo" id="TODO20"></div>
-                                </div>
-                                
-                            </dd>
+                            <ul id="todos0"></ul>
                         </div>
+
                     </div>
 
                     <div class="d-flex flex-column justify-content-center">
@@ -160,29 +141,7 @@
                             <h4 id="choreName1"></h4>
                         </div>
                         <div class="info ">
-                            <dd class="lista">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-text">
-                                      <input class="form-check-input mt-0" type="checkbox" value=""   >
-                                    </div>
-                                    <div class="border border-primary choresInfo" id="TODO01"></div>
-                                </div>
-
-                                <div class="input-group mb-3">
-                                    <div class="input-group-text">
-                                      <input class="form-check-input mt-0" type="checkbox" value=""   >
-                                    </div>
-                                    <div class="border border-primary choresInfo" id="TODO11"></div>
-                                </div>
-
-                                <div class="input-group mb-3">
-                                    <div class="input-group-text">
-                                      <input class="form-check-input mt-0" type="checkbox">
-                                    </div>
-                                    <div class="border border-primary choresInfo" id="TODO21"></div>
-                                </div>
-                                
-                            </dd>
+                            <ul id="todos1"></ul>
                         </div>
                     </div>
 
@@ -208,29 +167,7 @@
                             <h4 id="choreName2"></h4>
                         </div>
                         <div class="info ">
-                            <dd class="lista">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-text">
-                                      <input class="form-check-input mt-0" type="checkbox" value=""   >
-                                    </div>
-                                    <div class="border border-primary choresInfo" id="TODO02"></div>
-                                </div>
-
-                                <div class="input-group mb-3">
-                                    <div class="input-group-text">
-                                      <input class="form-check-input mt-0" type="checkbox" value=""   >
-                                    </div>
-                                    <div class="border border-primary choresInfo" id="TODO12"></div>
-                                </div>
-
-                                <div class="input-group mb-3">
-                                    <div class="input-group-text">
-                                      <input class="form-check-input mt-0" type="checkbox">
-                                    </div>
-                                    <div class="border border-primary choresInfo" id="TODO22"></div>
-                                </div>
-                                
-                            </dd>
+                            <ul id="todos2"></ul>
                         </div>
                     </div>
 
@@ -239,81 +176,28 @@
                     </div> 
 
                 </div>
+
             </div>
 
-            <div class="col-3 container taskListContainer d-flex justify-content-center">
+            <div class="col-3 container taskListContainer d-flex justify-content-between">
                 
-                <div class="row taskList border border-primary" ">
+                <div class="row taskList border border-primary">
 
                     <div class=" taskTitle row align-content-center">
                         <h4 style="text-align:center">Tarefas</h4>
                     </div>
-                
-                    <div class=" checkBox row align-content-center">
+                    
+                    <div class="taskBox">
 
-                        <div class=" col check  ">
-                            <input class="form-check-input mt-0 big-checkbox2" type="checkbox">
-                        </div>
-                        <div class=" taskInfo " id="task0"></div>
-
-                    </div>
-
-                    <div class=" checkBox row align-content-center">
-
-                        <div class=" col check ">
-                              <input class="form-check-input mt-0 big-checkbox2" type="checkbox">
-                        </div>
-
-                        <div class=" taskInfo " id="task1"></div>
-
-                    </div>
-
-                    <div class=" checkBox row align-content-center">
-
-                        <div class=" col check ">
-                              <input class="form-check-input mt-0 big-checkbox2" type="checkbox">
-                        </div>
-
-                        <div class=" taskInfo " id="task2"></div>
-
-                    </div>
-
-                    <div class=" checkBox row align-content-center">
-
-                        <div class=" col check ">
-                              <input class="form-check-input mt-0 big-checkbox2" type="checkbox">
-                        </div>
-
-                        <div class=" taskInfo " id="task3"></div>
-
-                    </div>
-
-                    <div class=" checkBox row align-content-center">
-
-                        <div class=" col check ">
-                              <input class="form-check-input mt-0 big-checkbox2" type="checkbox">
-                        </div>
-
-                        <div class=" taskInfo " id="task4"></div>
-
+                        <ul id="tasks"></ul>
                     </div>
 
 
-                    <div class=" checkBox row align-content-center">
-
-                        <div class=" col check ">
-                              <input class="form-check-input mt-0 big-checkbox2" type="checkbox">
-                        </div>
-                        <div class=" taskInfo " id="task5">
-                        </div>
-
-                    </div>
                 </div>
 
 
             </div>
-            
+
         </div>
-        
     </body>
 </html>

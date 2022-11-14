@@ -73,6 +73,7 @@ body{
 
 .NameAndInfo{
     width: 75%;
+    height: 206px;
 }
 
 .profilePicture{
@@ -150,3 +151,39 @@ body{
 .big-checkbox {width: 50px; height: 50px;}
 
 .big-checkbox2 {width: 30px; height: 30px;}
+
+.btn
+{
+    padding: 30px;
+}
+
+.add{
+    height: 100%;
+    width: 100%;
+}
+
+.addChore
+{
+    padding-left: 30%;
+}
+
+.bntAddPage
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bntAddPageADD
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.taskBox
+{
+   padding-top: 20px;
+   padding-bottom: 20px;
+}

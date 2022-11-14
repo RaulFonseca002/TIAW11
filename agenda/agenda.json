@@ -19,32 +19,28 @@
             "place": "BodyFit: Coracao Eucaristico%",
             "todo": 
             [
-            
                 {
                     "id": 1,
                     "info": "todo00",
                     "isDone": false
                 },
-            
-
-            
                 {
                     "id": 2,
                     "info": "todo10",
                     "isDone": false
                 },
-            
-            
-            
                 {
                     "id": 3,
                     "info": "todo20",
                     "isDone": false
+                },
+                {
+                    "id": 4,
+                    "info": "todo30",
+                    "isDone": false
                 }
-            
-            
             ],
-            "isDone": false
+            "isDone": true
         },
         {
             "userID": 1,
@@ -52,6 +48,7 @@
             "name": "Trabalho$",
             "hour": "10:00%",
             "place": "Empresa%",
+            "isDone": true,
             "todo": [
                 {
                     "id": 1,
@@ -68,72 +65,9 @@
                     "info": "todo21",
                     "isDone": false
                 }
-            ],
-            "isDone": false
-        },
-        {
-            "userID": 1,
-            "id": 3,
-            "name": "Cozinhar e Netflix$",
-            "hour": "09:00$",
-            "place": "BodyFit: Coracao Eucaristico$",
-            "todo": [
-                {
-                    "id": 1,
-                    "info": "todo02",
-                    "isDone": false
-                },
-
-                {
-                    "id": 2,
-                    "info": "todo12",
-                    "isDone": false
-                },
-                {
-                    "id": 3,
-                    "info": "todo22",
-                    "isDone": false
-                }
-            ],
-            "isDone": false
+            ]
+            
         }
-    ],
-    "tasks": [
-        {
-            "userID": 1,
-            "id": 1,
-            "info": "task1",
-            "isDone": false
-        },
-        {
-            "userID": 1,
-            "id": 2,
-            "info": "task2",
-            "isDone": false
-        },
-        {
-            "userID": 1,
-            "id": 3,
-            "info": "task3",
-            "isDone": false
-        },
-        {
-            "userID": 1,
-            "id": 4,
-            "info": "task4",
-            "isDone": false
-        },
-        {
-            "userID": 1,
-            "id": 5,
-            "info": "task5",
-            "isDone": false
-        },
-        {
-            "userID": 1,
-            "id": 6,
-            "info": "task6",
-            "isDone": false
-        }
+        
     ]
 }

@@ -1,7 +1,20 @@
-import agenda from './agenda.json' assert{type: 'json'};
+let agenda = localStorage.getItem('agenda');
+import agendaBackup from './agenda.json' assert {type: 'json'};
+
+
+if(agenda)
+{
+    agenda = JSON.parse(agenda);
+}else
+{
+    agenda = JSON.stringify(agendaBackup);
+    agenda = JSON.parse(agenda);
+}
+
 console.log(agenda);
 
 document.body.onload = () => {
+    //perfil 
     let uid=1
     let idx = agenda.profiles.findIndex (elem => elem.id == uid)
 
@@ -14,43 +27,69 @@ document.body.onload = () => {
     const status = agenda.profiles[idx].status
     document.getElementById('status').textContent = status;
 
+    //setup de variaveis para a grade horaria
     var hourLocate;
     var choreNameLocate;
     var localLocate;
-    var TODOlocate;
-    var taskLocate;
+    var todoLocate;
+   
+    var locate = 0;
+    var max = 0;
 
-    for(var c = 0; c<3; c++)
-    {
-        hourLocate = "hour" + c;
-        const hour = agenda.chores[c].hour
-        document.getElementById(hourLocate).textContent = hour;
-    
-        choreNameLocate = "choreName" + c;
-        const choreName = agenda.chores[c].name
-        document.getElementById(choreNameLocate).textContent = choreName;
-    
-        localLocate = "local" + c;
-        const place = agenda.chores[c].place
-        document.getElementById(localLocate).textContent = place;
-    
-    
-        for(var i = 0; i<3; i++)
+    //grade horaria
+    for(var c = 0; c<agenda.chores.length; c++)
+    {   if(agenda.chores[c].isDone == false)
         {
-            TODOlocate = "TODO" + i + c;
-            const TODO = agenda.chores[c].todo[i].info
-            document.getElementById(TODOlocate).textContent = TODO;
+            hourLocate = "hour" + locate;
+            const hour = agenda.chores[c].hour
+            document.getElementById(hourLocate).textContent = hour;
+        
+            choreNameLocate = "choreName" + locate;
+            const choreName = agenda.chores[c].name
+            document.getElementById(choreNameLocate).textContent = choreName;
+        
+            localLocate = "local" + locate;
+            const place = agenda.chores[c].place
+            document.getElementById(localLocate).textContent = place;
+        
+            var todoOutput = '';
+
+            for(var i = 0; i<agenda.chores[c].todo.length; i++)
+            {
+                if(agenda.chores[c].todo[i].isDone == false && max <5)
+                {
+                    todoOutput += '<li>'+agenda.chores[c].todo[i].info+'</li>'
+                    max++
+                }
+
+            }
+
+            todoLocate = 'todos' + locate;
+            document.getElementById(todoLocate).innerHTML = todoOutput;
+
+            locate++
         }
 
+        max = 0;
     }
 
-    for (var c = 0; c<6; c++)
+    //setup de variaveis para as tarefas
+    var taskOutput = '';
+    var locateTask = 0;
+    var maxTask = 0;
+
+    //tarefas
+    for (var c = 0; c<agenda.tasks.length; c++)
     {
-        taskLocate = "task" + c;
-        const task = agenda.tasks[c].info
-        document.getElementById(taskLocate).textContent = task;
+        if(agenda.tasks[c].isDone == false && maxTask<7)
+        {
+            taskOutput += '<ul class="taskBox"><input class="form-check-input mt-0 big-checkbox2" type="checkbox"></input>' +agenda.tasks[c].info+'</ul>'
+            document.getElementById('tasks').innerHTML = taskOutput;
+
+            locateTask++;
+            maxTask++;
+        }
 
     }
     
 }
-
